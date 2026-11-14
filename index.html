@@ -17,7 +17,7 @@
   --bar-track:#e6eaf0;--zero:#9aa3af;--score:#0d6f7a;
   --scrim:rgba(18,24,33,.42);
   color-scheme:light;
-  /* K 棒圖卡：固定深色，照 LINE k 圖卡 LINE_CARD_*，不隨主題切換 */
+  /* K 棒圖卡：固定深色，不隨主題切換 */
   --kc-bg:#11151C;--kc-raise:#19202A;--kc-grid:#28313D;--kc-ink:#E8EDF5;--kc-muted:#A5B2C2;--kc-faint:#7E8B9B;
   --kc-up:#FF5B6B;--kc-down:#36CBA5;--kc-flat:#A5B2C2;
   --kc-ma5:#58ABFF;--kc-ma20:#FF7BAB;--kc-ma60:#E9BD4D;
@@ -584,7 +584,7 @@ function md(src){
 }
 
 /* ---------- kcard ---------- */
-/* kcard-core:start — 純計算，不碰 DOM；規則照 hermes-trader kbar_chart.py（LINE k 圖卡） */
+/* kcard-core:start — 純計算，不碰 DOM */
 var KC=(function(){
   var DAY=86400000, MA_W=[5,20,60], TOL_PP=2, BENCH_EXT=0.35;
   function r1(x){return Number(x.toFixed(1));}
